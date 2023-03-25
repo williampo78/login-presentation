@@ -16,10 +16,10 @@
         </picture>
       </div>
 
-      <div class="flex bg-white h-8">
+      <div class="hidden md:flex bg-white h-8 justify-between">
         <input type="text" />
-        <span class="text-green">
-          <img src="@/assets/images/search.svg" alt="" />
+        <span class="text-green flex items-center">
+          <img src="@/assets/images/input-search.svg" alt="" />
           搜尋
         </span>
       </div>
