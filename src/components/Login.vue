@@ -65,10 +65,7 @@
             登入
           </button>
 
-          <div class="flex my-4 justify-center md:ml-[50px] md:mr-[120px]">
-            <span
-              class="text-left md:w-[60px] md:mr-[15px] md:text-right"
-            ></span>
+          <div class="flex my-4 justify-center">
             <a class="text-green pr-6 mr-6 border-black border-r" href=""
               >忘記密碼</a
             >
