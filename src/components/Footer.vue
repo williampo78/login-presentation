@@ -66,6 +66,15 @@
         </div>
       </div>
     </div>
+    <div class="py-2 bg-copyright text-center text-white">
+      <p>
+        Copyright © 2021 Dr.Advice
+
+        <span class="hidden md:inline"
+          >Technology Corporation Limited. All Rights Reserved.</span
+        >
+      </p>
+    </div>
   </div>
 </template>
 
