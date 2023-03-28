@@ -1,16 +1,20 @@
 <template>
-  <div id="app">
-    <Header />
-    <Nav />
-    <router-view />
+  <div id="app" class="min-h-[100vh] flex flex-col justify-between">
+    <div>
+      <Header />
+      <Nav />
+      <div class="min-h-[60vh] my-[40px]">
+        <router-view />
+      </div>
+    </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-import Nav from "@/components/Nav.vue";
+import Header from "@/components/Header.vue"
+import Footer from "@/components/Footer.vue"
+import Nav from "@/components/Nav.vue"
 
 export default {
   components: {
@@ -18,7 +22,7 @@ export default {
     Footer,
     Nav,
   },
-};
+}
 </script>
 
 <style lang="scss">
