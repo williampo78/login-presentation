@@ -1,67 +1,47 @@
 <template>
-  <div class="md:flex md:justify-center">
-    <div class="md:flex md:max-w-[1200px]">
-      <img
-        class="hidden md:block md:mr-[-200px]"
-        src="@/assets/images/pic-pharmacy.png"
-        alt=""
-      />
+  <div class="md:flex justify-center">
+    <div class="md:flex w-full max-w-[1200px]">
+      <div class="hidden md:block flex-shrink-0 mr-[-15%]">
+        <img src="@/assets/images/pic-pharmacy.png" alt="" />
+      </div>
       <form
-        class="py-[60px] px-[15px] bg-white md:border md:border-silver md:w-[620px]"
+        class="px-[15px] pt-[30px] pb-[25px] bg-white md:flex-1  md:max-w-[620px] md:border border-silver md:rounded md:py-[60px] md:pr-28 md:pl-[50px]"
         action=""
       >
-        <h3 class="text-2xl font-bold mb-[20px]">會員登入</h3>
-        <div
-          class="flex flex-col my-3 md:flex-row md:items-center md:ml-[50px] md:mr-[120px]"
-        >
-          <label class="text-left md:w-[60px] md:mr-[15px] md:text-right" for=""
-            >手機</label
-          >
-          <input class="border rounded h-[40px] flex-grow" type="text" />
-        </div>
-        <div
-          class="flex flex-col my-4 md:flex-row md:items-center md:ml-[50px] md:mr-[120px]"
-        >
-          <label class="text-left md:w-[60px] md:mr-[15px] md:text-right" for=""
-            >密碼</label
-          >
-          <input class="border rounded h-[40px] flex-grow" type="text" />
-        </div>
-        <div
-          class="flex flex-col my-4 md:flex-row md:items-center md:ml-[50px] md:mr-[120px]"
-        >
-          <label class="text-left md:w-[60px] md:mr-[15px] md:text-right" for=""
-            >驗證碼</label
-          >
-          <input class="border rounded h-[40px] flex-grow" type="text" />
-        </div>
-        <div
-          class="flex my-3 md:flex-row md:items-center md:ml-[50px] md:mr-[120px]"
-        >
-          <label
-            class="text-left md:w-[60px] md:mr-[15px] md:text-right"
-            for=""
-          ></label>
-          <img class="max-w-[180px]" src="@/assets/images/captcha.png" alt="" />
-          <button>
-            <img class="ml-4" src="@/assets/images/btn-refresh.svg" alt="" />
-          </button>
-        </div>
+        <h3 class="text-xl mb-5 font-bold ">會員登入</h3>
 
+        <div class="flex flex-col my-2 gap-y-2 md:flex-row md:justify-end">
+          <label class="text-left md:mr-4 md:text-right md:w-[60px]" for="">手機</label>
+          <input class="border rounded h-10 flex-1" type="text" />
+        </div>
+        <div class="flex flex-col my-2 gap-y-2 md:flex-row md:justify-end">
+          <label class="text-left md:mr-4 md:text-right md:w-[60px]" for="">密碼</label>
+          <input class="border rounded h-10 flex-1" type="text" />
+        </div>
+        <div class="flex flex-col my-2 gap-y-2 md:flex-row md:justify-end">
+          <label class="text-left md:mr-4 md:text-right md:w-[60px]" for="">驗證碼</label>
+          <input class="border rounded h-10 flex-1" type="text" />
+        </div>
+        <div class="flex">
+          <img src="@/assets/images/captcha.png" alt="" />
+          <img src="@/assets/images/btn-refresh.svg" alt="" />
+        </div>
         <button
-          class="bg-green w-full h-[40px] rounded-md mt-8 md:max-w-[60%] text-white"
+          class="bg-green text-white h-10 rounded w-full mt-[30px] mb-[15px]"
         >
           登入
         </button>
-
-        <div class="flex my-4 justify-center">
-          <a class="text-green pr-6 mr-6 border-black border-r" href=""
+        <div class="flex justify-center">
+          <a
+            class="text-green font-bold pr-[10px] mr-[10px] border-r border-green"
+            href=""
             >忘記密碼</a
           >
           <p>我還不是會員，</p>
-          <a class="text-green flex" href=""
-            >加入會員 <img src="@/assets/images/btn-next.svg" alt=""
-          /></a>
+          <a class="flex text-green font-bold" href=""
+            >加入會員
+            <img src="@/assets/images/btn-next.svg" alt="" />
+          </a>
         </div>
       </form>
     </div>
