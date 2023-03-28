@@ -2,7 +2,9 @@
   <div id="app">
     <Header />
     <Nav />
-    <router-view />
+    <div class="min-h-[60vh] my-[40px]">
+      <router-view />
+    </div>
     <Footer />
   </div>
 </template>
