@@ -1,11 +1,9 @@
 <template>
-  <div id="app" class="min-h-[100vh] flex flex-col justify-between">
-    <div>
-      <Header />
-      <Nav />
-      <div class="min-h-[60vh] my-[40px]">
-        <router-view />
-      </div>
+  <div id="app">
+    <Header />
+    <Nav />
+    <div class="min-h-[60vh] my-[40px]">
+      <router-view />
     </div>
     <Footer />
   </div>

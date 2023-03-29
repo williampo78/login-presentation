@@ -7,17 +7,10 @@
         <img class="w-6 h-6" src="@/assets/images/hamburger.svg" alt="" />
         分類總覽
       </div>
-      <ul class="flex items-center overflow-auto">
-        <li class="w-[80px] flex-shrink-0">分類1</li>
-        <li class="w-[80px] flex-shrink-0">分類2</li>
-        <li class="w-[80px] flex-shrink-0">分類3</li>
-        <li class="w-[80px] flex-shrink-0">分類4</li>
-        <li class="w-[80px] flex-shrink-0">分類5</li>
-        <li class="w-[80px] flex-shrink-0">分類6</li>
-        <li class="w-[80px] flex-shrink-0">分類7</li>
-        <li class="w-[80px] flex-shrink-0">分類8</li>
-        <li class="w-[80px] flex-shrink-0">分類9</li>
-        <li class="w-[80px] flex-shrink-0">分類10</li>
+      <ul class="flex gap-x-2  items-center overflow-auto">
+        <li class="min-w-[80px] flex-shrink-0 " v-for="(item, index) in list" :key="index">
+          {{ item }}
+        </li>
       </ul>
     </div>
   </div>
@@ -27,7 +20,22 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Nav",
-}
+  data() {
+    return {
+      list: [
+        "首頁",
+        "健康力專區",
+        "文字最多六字",
+        "樂活美食",
+        "養顏美容",
+        "熱銷專區",
+        "益生菌",
+        "醫療器材",
+        "視力保健",
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss"></style>
