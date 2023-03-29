@@ -1,50 +1,35 @@
 <template>
-  <div class="bg-green md:flex md:justify-center">
-    <div
-      class="px-2 py-1 flex items-center justify-between md:w-[100%] md:max-w-[1200px]"
-    >
-      <div class="flex items-center">
-        <div class="flex items-center">
-          <img
-            class="mr-3 md:hidden"
-            src="@/assets/images/hamburger.svg"
-            alt=""
+  <div class="bg-green md:flex md:justify-center p-2 md:p-1">
+    <div class="flex justify-between gap-x-[10px] w-full md:max-w-[1200px]">
+      <div class="flex items-center gap-x-[10px]">
+        <img class="md:hidden" src="@/assets/images/hamburger.svg" alt="" />
+        <picture class="max-w-[180px]">
+          <source
+            media="(min-width:992px )"
+            srcset="@/assets/images/logo@2x.png"
+            sizes=""
           />
-          <picture class="w-[180px] mr-5">
-            <source
-              srcset="@/assets/images/logo@2x.png"
-              media="(min-width: 991px)"
-            />
-            <img src="@/assets/images/logo.svg" />
-          </picture>
-        </div>
-
-        <div
-          class="w-[580px] hidden md:flex bg-white h-8 px-1 justify-between rounded"
-        >
-          <input
-            type="text"
-            class="w-[90%] border-0 outline-none border-r-[1px]"
-          />
-          <span class="text-green flex items-center">
-            <img src="@/assets/images/input-search.svg" alt="" />
-            搜尋
-          </span>
+          <img src="@/assets/images/logo.svg" alt="" />
+        </picture>
+        <div class="hidden w-[579px] flex-shrink md:flex items-center bg-white p-1 text-green rounded">
+          <input class="flex-1 border-r border-black mr-1" type="text" />
+          <img class="w-[18px] h-[18px]" src="@/assets/images/input-search.svg" alt="" />
+          <span class="w-8">搜尋</span>
         </div>
       </div>
-      <div>
-        <div class="flex items-center md:hidden">
+      <div class="flex items-center justify-end gap-x-2">
+        <div class="flex md:hidden">
           <img src="@/assets/images/search.svg" alt="" />
           <img src="@/assets/images/user.svg" alt="" />
           <img src="@/assets/images/cart.svg" alt="" />
         </div>
-        <div class="md:flex items-center hidden">
-          <img src="@/assets/images/user-desktop.svg" alt="" />
-          <a class="text-white border-r px-2 mr-2" href="">會員登入</a>
-          <a href="" class="text-white mr-2">註冊</a>
-          <img src="@/assets/images/cart-desktop.svg" alt="" />
-          <a href="" class="text-white">購物車</a>
-        </div>
+      <div class="hidden md:flex items-center flex-shrink-0 text-white">
+        <img src="@/assets/images/user-desktop.svg" alt="">
+        <a class="pr-2 border-r mr-2" href="">會員登入</a>
+        <a class="mr-2" href="">註冊</a>
+        <img src="@/assets/images/cart-desktop.svg" alt="">
+        <a href="">購物車</a>
+      </div>
       </div>
     </div>
   </div>
@@ -54,7 +39,7 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Header",
-}
+};
 </script>
 
 <style scoped lang="scss"></style>
