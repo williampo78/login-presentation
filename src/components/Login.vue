@@ -5,45 +5,31 @@
         <img src="@/assets/images/pic-pharmacy.png" alt="" />
       </div>
       <form
-        class="px-[15px] pt-[30px] pb-[25px] bg-white w-full sm:w-[70%] md:flex-1 md:max-w-[620px] sm:border border-silver sm:rounded md:py-[60px] md:px-[50px]"
+        class="px-[15px] pt-[30px] pb-[25px] bg-white w-full sm:w-[80%] md:flex-1 md:max-w-[620px] sm:border border-silver sm:rounded md:py-[60px] md:px-[50px]"
         action=""
       >
         <h3 class="text-xl mb-5 font-bold">會員登入</h3>
 
-
-        <div
-          class="flex flex-col my-4 gap-y-2 md:flex-row md:justify-end md:mr-[70px]"
-        >
-          <label class="text-left md:mr-4 md:text-right md:w-[60px]" for=""
-            >手機</label
-          >
+        <div class="grid-input">
+          <label class="text-left md:text-right" for="">手機</label>
           <input class="border rounded h-10 md:flex-1" type="text" />
         </div>
-        <div
-          class="flex flex-col my-4 gap-y-2 md:flex-row md:justify-end md:mr-[70px]"
-        >
-          <label class="text-left md:mr-4 md:text-right md:w-[60px]" for=""
-            >密碼</label
-          >
+        <div class="grid-input">
+          <label class="text-left md:text-right" for="">密碼</label>
           <input class="border rounded h-10 md:flex-1" type="text" />
         </div>
-        <div
-          class="flex flex-col my-4 gap-y-2 md:flex-row md:justify-end md:mr-[70px]"
-        >
-          <label class="text-left md:mr-4 md:text-right md:w-[60px]" for=""
-            >驗證碼</label
-          >
+        <div class="grid-input">
+          <label class="text-left md:text-right" for="">驗證碼</label>
           <input class="border rounded h-10 md:flex-1" type="text" />
         </div>
-        <div class="flex flex-col my-4 gap-y-2 md:flex-row md:mr-[70px]">
-          <span class="md:mr-4 md:w-[60px]"></span>
-          <div class="flex gap-3">
+        <div class="grid-input">
+          <div class="flex gap-3 col-start-2">
             <img src="@/assets/images/captcha.png" alt="" />
             <img src="@/assets/images/btn-refresh.svg" alt="" />
           </div>
         </div>
         <button
-          class="block bg-green text-white h-10 rounded w-full mt-[30px] mb-[15px] md:w-[calc(100%-140px)] mx-[70px]"
+          class="block bg-green text-white h-10 rounded w-full mt-[30px] mb-[15px] md:w-[calc(100%-140px)] md:mx-[70px]"
         >
           登入
         </button>
@@ -72,5 +58,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.grid-input {
+  @apply flex flex-col my-4 gap-y-2 md:grid md:grid md:grid-cols-[50px,1fr] md:mr-[70px] md:gap-x-[15px];
+}
 </style>
