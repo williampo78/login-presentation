@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-green">
-    <div class="flex justify-center">
+  <div>
+    <div class="bg-green flex justify-center">
       <div
         class="flex justify-center py-[21px] w-full md:max-w-[1200px] md:justify-between md:py-[30px]"
       >
@@ -8,25 +8,25 @@
           <dl class="flex-1 text-left">
             <dt class="text-[18px] font-bold">關於我們</dt>
             <dd class="my-1">認識我們</dd>
-            <dt class="my-1">門市據點</dt>
+            <dd class="my-1">門市據點</dd>
             <dd class="my-1">描述二有很多內容說明</dd>
           </dl>
           <dl class="flex-1 text-left">
             <dt class="text-[18px] font-bold">購物流程</dt>
             <dd class="my-1">運費及配送</dd>
-            <dt class="my-1">付款方式</dt>
+            <dd class="my-1">付款方式</dd>
             <dd class="my-1">免責聲明</dd>
           </dl>
           <dl class="flex-1 text-left">
             <dt class="text-[18px] font-bold">會員專區</dt>
             <dd class="my-1">紅利點數</dd>
-            <dt class="my-1">會員服務條款</dt>
+            <dd class="my-1">會員服務條款</dd>
             <dd class="my-1">隱私權政策</dd>
           </dl>
           <dl class="flex-1 text-left">
             <dt class="text-[18px] font-bold">客服中心</dt>
             <dd>常見問題Q&A</dd>
-            <dt class="my-1">退換貨須知</dt>
+            <dd class="my-1">退換貨須知</dd>
             <dd class="my-1">與我們聯繫</dd>
             <dd class="my-1">防詐騙宣導</dd>
           </dl>
