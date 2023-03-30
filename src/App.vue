@@ -3,7 +3,7 @@
     <div>
       <Header />
       <Nav />
-      <div class="min-h-[60vh] my-[40px]">
+      <div class="my-[40px]">
         <router-view />
       </div>
     </div>
